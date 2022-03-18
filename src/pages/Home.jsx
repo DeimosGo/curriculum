@@ -19,7 +19,7 @@ const Home = () => {
                         <ul className='container__list second-list' >
                             <li className='container__elemet'>David Castillo Ramirez</li>
                             <li className='container__elemet'>19 años</li>
-                            <li className='container__elemet'>FrontEnd Developer</li>
+                            <li className='container__elemet'>Web Developer</li>
                             <li className='container__elemet'>Piura - Perú</li>
                         </ul>
                     </div>

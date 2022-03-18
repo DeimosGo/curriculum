@@ -22,7 +22,7 @@
 }
 
 .container__item{
-    box-shadow: 10px 5px 2px #134E48;
+    box-shadow: 10px 5px 2px #13284E;
     cursor: pointer;
     font-size: 20px;
     background-color: var(--primario);
@@ -34,17 +34,10 @@
 
 
 .container__item:hover{
-    box-shadow: 10px 5px 12px #134E48;
-    font-size: 28px;
+    box-shadow: 10px 5px 12px #13284E;
+    font-size: 24px;
     transition: all .3s;
 }
-
-
-.container section:nth-child(1):hover{
-    font-size: 22px;
-    transition: all .3s;
-}
-
 
 .container section:nth-child(1){
     grid-area: info;
@@ -59,8 +52,9 @@
 }
 
 .datos{
+    margin-left: auto;
+    margin-right: auto;
     justify-content: center;
-    justify-self: center;
     display: flex;
     flex-direction: row;
 }
@@ -98,4 +92,61 @@ li{
     place-items: center;
     grid-area: cont;
     background-color: var(--quint);
+}
+
+@media (max-width:1200px) {
+    .container{
+        width: 800px;
+        height: 500px;
+        grid-template-columns:  40% 20% 20%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas:
+        "info form hab"
+        "info port cont";
+    }
+    .container__item{
+        font-size: 12px;
+    }
+    .container__item:hover{
+        box-shadow: 10px 5px 12px #13284E;        ;
+        font-size: 14px;
+        transition: all .3s;
+    }
+}
+
+@media (max-width:755px) {
+    li{
+        padding: 4px 0;
+    }
+    .container{
+        margin-bottom: 12px;
+        width: 300px;
+        height:80vh;
+        grid-template-columns:  1fr;
+        grid-template-rows: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+        grid-template-areas:
+        "info"
+        "info"
+        "form"
+        "hab"
+        "port"
+        "cont";
+    }
+    .container__item{
+        font-size: 14px;
+    }
+    .container__item:hover{
+        box-shadow: 10px 5px 12px #134E48;
+        font-size: 16px;
+        transition: all .3s;
+    }
+
+    .container__img{
+        padding-top: 24px;
+        border-radius: 50%;
+        margin: auto;
+        width: 50px;
+        filter: brightness(110%);
+    }
+
 }
