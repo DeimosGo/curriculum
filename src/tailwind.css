@@ -567,6 +567,14 @@ video {
   bottom: 0px;
 }
 
+.right-0 {
+  right: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -581,6 +589,10 @@ video {
 
 .z-30 {
   z-index: 30;
+}
+
+.m-auto {
+  margin: auto;
 }
 
 .mt-6 {
@@ -647,6 +659,10 @@ video {
 
 .w-1\/4 {
   width: 25%;
+}
+
+.w-10\/12 {
+  width: 83.333333%;
 }
 
 .-translate-y-1 {
@@ -736,6 +752,12 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .overflow-hidden {
