@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.buttonBar {
+    @apply cursor-pointer transition-all duration-150 hover:-translate-y-1 text-lg font-semibold
+}
+.buttonTab {
+    @apply cursor-pointer transition-all duration-150 hover:text-gray-600
+}
