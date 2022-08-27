@@ -12,7 +12,7 @@ import LoadingPage from "./components/LoadingPage.vue";
 import MainHome from "./components/MainHome.vue";
 const carga = ref(false);
 window.onload = ()=>{
-  setTimeout(()=>carga.value = true,1000)
+  carga.value = true
 };
 </script>
 <style scoped>

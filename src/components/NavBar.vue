@@ -1,7 +1,7 @@
 <template>
     <nav class="w-10/12 absolute top-0 flex lg:justify-between items-center lg:px-12 h-fit lg:h-20 text-white z-30 right-0 left-0 m-auto">
         <h3 class="pt-4 pb-2 lg:p-0 w-full lg:w-fit text-center text-2xl borde font-bold">Castillo Ramirez</h3>
-        <ul class="hidden lg:flex justify-center text-lg space-x-6">
+        <ul class="hidden lg:flex justify-center text-lg space-x-10">
             <li><button @click="setValue(1)" class="buttonBar" :class="styleFirst">Informacion</button></li>
             <li><button @click="setValue(2)" class="buttonBar" :class="styleSecond">Habilidades</button></li>
             <li><button @click="setValue(3)" class="buttonBar" :class="styleThird">Portafolio</button></li>
