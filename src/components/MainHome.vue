@@ -19,7 +19,7 @@ import { defineAsyncComponent, onMounted, ref } from "vue";
 import Glide from "@glidejs/glide";
 import BackGround from "./BackGround.vue";
 import TabBar from "./TabBar.vue";
-const HabilitiesSection = defineAsyncComponent(()=> import("./HabilitiesSection.vue"));
+const HabilitiesSection = defineAsyncComponent(()=> import("../Containers/HabilitiesSection.vue"));
 const PortafolioComponent =defineAsyncComponent(()=> import("./PortafolioComponent.vue"));
 
 const NavBar = defineAsyncComponent(() => import("./NavBar.vue"));
@@ -69,12 +69,11 @@ onMounted(() => {
 </script>
 <style scoped>
 .habilities-enter-active{
-  animation: showHabs 200ms;
+  animation: showHabs 800ms;
 }
 
 @keyframes showHabs {
   0%{
-    transform: scale(0.9);
     opacity: 0;
   }
 }
@@ -94,7 +93,6 @@ onMounted(() => {
 }
 @keyframes hideInfo {
   100%{
-    transform: scale(0);
     opacity: 0;
   }
 }

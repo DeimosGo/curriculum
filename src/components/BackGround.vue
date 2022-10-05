@@ -12,15 +12,24 @@
 <style scoped>
 .first {
   background: url("https://images.pexels.com/photos/2083166/pexels-photo-2083166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") center;
-  background-size: cover;
+  background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .second {
-  background: url("https://images.pexels.com/photos/2131790/pexels-photo-2131790.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") center;
-  background-size: cover;
+  background: url("https://images.pexels.com/photos/267147/pexels-photo-267147.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") center;
+  background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .third {
   background: url("https://images.pexels.com/photos/2855113/pexels-photo-2855113.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") center;
-  background-size: cover;
+  background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .glide,
 .glide__track {
