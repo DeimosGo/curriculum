@@ -30,8 +30,8 @@ const next = () => {
 .hover-underline {
     display: inline-block;
     position: relative;
-    color: rgba(17, 24, 39, 1);
     color: white;
+    animation: change__color 8s forwards infinite steps(12);
 }
 
 .hover-underline:after {

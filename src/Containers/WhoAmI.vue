@@ -27,8 +27,8 @@
                 </div>
                 <p class="text-2xl text-center">Peru</p>
             </div>
-            <button @click="next" class="w-fit hover-underline text-xl border-b-2 border-gray-900 mt-16 pt-1
-            transition-all duration-150 hover:translate-y-1 font-bold">
+            <button @click="next"
+                class="w-fit hover-underline text-2xl underline underline-offset-8 mt-16 pt-1 font-bold">
                 Tell me more
             </button>
         </div>
@@ -47,6 +47,25 @@ const next = () => {
     display: inline-block;
     position: relative;
     color: rgba(17, 24, 39, 1);
+    animation: color__change 4s forwards infinite;
+}
+
+@keyframes color__change {
+    0% {
+        color: rgba(0, 212, 135, 1);
+    }
+
+    33.33% {
+        color: rgba(10, 25, 176, 1);
+    }
+
+    66.66% {
+        color: rgba(137, 4, 183, 1);
+    }
+
+    100% {
+        color: rgba(0, 212, 135, 1);
+    }
 }
 
 .hover-underline:after {
@@ -57,7 +76,8 @@ const next = () => {
     height: 2px;
     top: 0;
     left: 0;
-    background-color: rgba(17, 24, 39, 1);
+    background: rgb(0, 212, 135);
+    background: linear-gradient(90deg, rgba(0, 212, 135, 1) 20%, rgba(10, 25, 176, 1) 50%, rgba(137, 4, 183, 1) 100%);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -65,10 +85,6 @@ const next = () => {
 .hover-underline:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
-}
-
-.change {
-    animation: cambio 6s forwards infinite;
 }
 
 .back {
@@ -85,7 +101,7 @@ const next = () => {
 }
 
 .animate__letters {
-    animation: letters infinite 6s;
+    animation: letters infinite 4s;
 }
 
 @keyframes letters {

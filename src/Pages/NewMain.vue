@@ -3,6 +3,7 @@
     <WhoAmI id="second"/>
     <HabilitiesSection id="skills"/>
     <MyProjects id="projects"/>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
 </template>
 <script setup>
     import FirstModule from "../Containers/FirstModule.vue";
