@@ -1,6 +1,6 @@
 <template>
     <div class="w-full h-100v absolute z-50 flex flex-col justify-center items-center space-y-4">
-        <h1 class="font-Josefin text-4xl lg:text-6xl text-center w-full">Creemos soluciones juntos</h1>
+        <h1 class="font-Josefin text-4xl lg:text-6xl text-center w-full">Let's create solutions together</h1>
         <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
     </div>
 </template>

@@ -13,3 +13,7 @@
     space-x-3 bg-gray-700 hover:bg-white hover:text-gray-700 transition-all duration-300
     hover:border rounded-lg hover:border-gray-500
 }
+
+.cardHabsLoad{
+    @apply w-full h-36 lg:h-48 flex justify-center cursor-pointer items-center space-x-3 bg-gray-700  rounded-lg
+}

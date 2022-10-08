@@ -17,12 +17,12 @@
             </div>
             <div v-motion-pop-visible :delay="400"
                 class="overflow-y-scroll lg:overflow-y-visible w-full flex justify-center items-center">
-                <transition name="tecno">
+                <Transition name="tecno">
                     <TecnoHablities v-if="first" />
-                </transition>
-                <transition name="lab">
+                </Transition>
+                <Transition name="lab">
                     <SocialHabilities v-if="second" />
-                </transition>
+                </Transition>
             </div>
         </div>
         <div class="w-full h-1/6 flex justify-center items-center">
@@ -35,8 +35,8 @@
 </template>
 <script setup>
 import { onMounted, ref, defineAsyncComponent } from "vue";
-const TecnoHablities = defineAsyncComponent(() => import("../components/TecnoHablities.vue"));
-const SocialHabilities = defineAsyncComponent(() => import("../components/SocialHabilities.vue"));
+const TecnoHablities = defineAsyncComponent(() => import("./../components/TecnoHablities.vue"));
+const SocialHabilities = defineAsyncComponent(() => import("./../components/SocialHabilities.vue"));
 const first = ref(true);
 const second = ref(false);
 const classFirst = ref('bg-white border-white text-gray-800');
@@ -75,16 +75,19 @@ const change = (valor) => {
 }
 
 @keyframes change__color {
-    0%{
+    0% {
         color: rgba(0, 212, 135, 1);
     }
-    33.33%{
+
+    33.33% {
         color: rgba(10, 25, 176, 1);
     }
-    66.66%{
+
+    66.66% {
         color: rgba(137, 4, 183, 1);
     }
-    100%{
+
+    100% {
         color: rgba(0, 212, 135, 1);
     }
 }

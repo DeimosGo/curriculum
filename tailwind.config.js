@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       height: {
           "66": "66px",
+          "20v": "20vh",
           "30v": "30vh",
           "40v": "40vh",
           "50v": "50vh",

@@ -17,7 +17,7 @@
 </template>
 <script setup>
 import { defineAsyncComponent } from "vue";
-import LoadingPage from "./components/LoadingPage.vue";
+import LoadingPage from "./Containers/LoadingPage.vue";
 const NewMain = defineAsyncComponent(() => {
   return new Promise((resolve) => {
     setTimeout(()=>resolve(import("./Pages/NewMain.vue")), 1500);
