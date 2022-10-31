@@ -15,7 +15,7 @@
                     Soft Skills
                 </button>
             </div>
-            <div v-motion-pop-visible :delay="400"
+            <div v-motion-slide-visible-left :delay="400"
                 class="overflow-y-scroll lg:overflow-y-visible w-full flex justify-center items-center">
                 <Transition name="tecno">
                     <TecnoHablities v-if="first" />
