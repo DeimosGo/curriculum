@@ -12,7 +12,7 @@
                     <li class="h-10 animate__letters">backend</li>
                     <li class="h-10">frontend</li>
                 </ul>
-                <p class="mt-12">Developer</p>
+                <p class="mt-12">developer</p>
             </div>
             <div class="w-5/12 lg:w-1/4 relative">
                 <div class="w-full m-auto left-0 right-0 bottom-0 top-3 h-full absolute z-10 gradientImage"></div>
