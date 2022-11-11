@@ -1,6 +1,6 @@
 <template>
     <section class="w-full h-90v flex flex-col items-center justify-start space-y-6 bg-gray-50">
-        <h3 class="text-5xl py-2 lg:py-6 text-gray-900">I'm a...</h3>
+        <h3 class="text-4xl py-2 lg:py-6 text-gray-900">I'm a...</h3>
         <div v-motion-slide-visible-right :delay="400" class="w-11/12 lg:w-5/12 h-80v forma text-gray-900 flex flex-col
         justify-between items-center bg-white py-4 shadow-xl">
             <p class="text-2xl text-center underline underline-offset-4">
@@ -9,8 +9,8 @@
             <div class="text-5xl text-center relative flex flex-row">
                 <ul class="absolute overflow-hidden h-10 flex flex-col justify-start items-center
                 top-0 left-0 right-0 m-auto space-y-1">
-                    <li class="h-10 animate__letters">Web</li>
-                    <li class="h-10">Mobile</li>
+                    <li class="h-10 animate__letters">backend</li>
+                    <li class="h-10">frontend</li>
                 </ul>
                 <p class="mt-12">Developer</p>
             </div>
@@ -47,7 +47,7 @@ const next = () => {
     display: inline-block;
     position: relative;
     color: rgba(17, 24, 39, 1);
-    animation: color__change 4s forwards infinite;
+    animation: color__change 2.8s forwards infinite;
 }
 
 @keyframes color__change {

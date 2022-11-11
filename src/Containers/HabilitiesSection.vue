@@ -1,6 +1,6 @@
 <template>
     <section class="w-full h-90v flex flex-col justify-between items-center space-y-4 lg:space-y-4 bg-gray-50">
-        <h2 class="text-3xl pt-8">Skills</h2>
+        <h2 class="text-3xl pt-8">My skills</h2>
         <div class="w-full flex-col items-center justify-center space-y-4 overflow-y-scroll lg:overflow-y-visible">
             <div class="p-1 lg:pl-4 flex h-fit justify-center space-x-2
         lg:space-x-7 w-full items-center lg:h-1/6">
@@ -34,9 +34,9 @@
     </section>
 </template>
 <script setup>
-import { onMounted, ref, defineAsyncComponent } from "vue";
-const TecnoHablities = defineAsyncComponent(() => import("./../components/TecnoHablities.vue"));
-const SocialHabilities = defineAsyncComponent(() => import("./../components/SocialHabilities.vue"));
+import { onMounted, ref } from "vue";
+import TecnoHablities from "./../components/TecnoHablities.vue";
+import SocialHabilities from "./../components/SocialHabilities.vue";
 const first = ref(true);
 const second = ref(false);
 const classFirst = ref('bg-white border-white text-gray-800');

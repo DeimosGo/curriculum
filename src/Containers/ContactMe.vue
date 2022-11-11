@@ -1,22 +1,24 @@
 <template>
-    <section
-        class="w-full h-30v lg:h-20v bg-sky-50 flex flex-col items-center justify-center lg:justify-start
-        py-3 space-y-4 lg:space-y-6">
-        <h3 class="text-3xl">Contact Me</h3>
-        <ul class="flex w-11/12 flex-col lg:flex-row lg:w-3/5 space-y-3 lg:space-y-0 items-center justify-center
-        lg:space-x-8 text-lg lg:text-2xl text-blue-900">
-            <li class="w-1/2 flex items-center justify-center space-x-2 hover:text-blue-700">
-                <i class="fa-brands fa-linkedin mb-1"></i>
-                <a target="_blank" href="https://www.linkedin.com/in/david-castillo-ramirez-dev">LinkedIn</a>
+    <footer
+        class="w-full h-[15vh] bg-white flex flex-col items-center justify-between py-5">
+        <h3 class="text-xl">Contact Me</h3>
+        <ul class="flex flex-row w-3/5 lg:w-1/5 items-center justify-between text-4xl text-slate-800">
+            <li class="w-fit hover:text-sky-700 transition-all duration-150 rounded-md border
+            border-transparent p-2 hover:border-sky-700">
+                <a class="flex flex-col justify-center items-center space-y-1" target="_blank"
+                href="https://www.linkedin.com/in/david-castillo-ramirez-dev">
+                    <i class="fa-brands fa-linkedin mb-1"></i>
+                    <span class="text-base">LinkedIn</span>
+                </a>
             </li>
-            <li class="w-1/2 flex items-center justify-center space-x-2">
-                <i class="fa-solid fa-at mt-1"></i>
-                <P>davinsider345@gmail.com</p>
-            </li>
-            <li class="w-1/2 flex items-center justify-center space-x-2 hover:text-blue-700">
-                <i class="fa-brands fa-github mb-1"></i>
-                <a target="_blank" href="https://github.com/DeimosGo">Github</a>
+            <li class="w-fit hover:text-sky-700 transition-all duration-150 rounded-md border
+            border-transparent p-2 hover:border-sky-700">
+                <a class="flex flex-col justify-center items-center space-y-1" target="_blank"
+                href="https://github.com/DeimosGo">
+                    <i class="fa-brands fa-github mb-1"></i>
+                    <span class="text-base">GitHub</span>
+                </a>
             </li>
         </ul>
-    </section>
+    </footer>
 </template>
